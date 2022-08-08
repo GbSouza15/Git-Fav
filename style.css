@@ -1,0 +1,222 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+
+  --ff-primary: 'Poppins', sans-serif;
+  --tx-color: #303030;
+
+  --hue: 194;
+  --primary-color: hsl(var(--hue), 100%, 63%)
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--tx-color);
+  background: #000000;
+}
+
+body * {
+  font-family: var(--ff-primary);
+}
+
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#app {
+  padding: 2rem;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 2.5rem 0;
+}
+
+.logo {
+  width: 18.6rem
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search input {
+  color: white;
+  height: 4.8rem;
+  width: 46.2rem;
+  background: #06181C;
+  border: none;
+  border-radius: 5px;
+  padding: 0 .8rem;
+  
+}
+
+.search button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  color: #FFFFFF;
+  
+  background: #065E7C;
+  font-weight: 700;
+  border-radius: 5px;
+  width: 17rem;
+  height: 4.8rem;
+  border: none;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+.search  button:hover {
+  background-color: #FFFFFF;
+  color: #065E7C;
+ 
+}
+
+.tableone {
+  border-radius: 1.2rem;
+  max-height: 50rem;
+  overflow: auto;
+  border: 1px solid #4A808C;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
+}
+
+table * {
+  font-size: 1.4rem;
+  
+}
+
+table th {
+  background: #092D38;
+  color: #E1E1E6;
+  text-align: left;
+  font-weight: normal;
+  padding: 1.5rem;
+}
+
+table tr:nth-child(odd) {
+  background: rgba(6, 22, 27, 0.5);
+  
+}
+
+table tr:nth-child(even) {
+  background: #06181C;
+  
+}
+
+table th:first-child {
+  border-top-left-radius: 1.2rem;
+}
+
+table th:last-child {
+  border-top-right-radius: 1.2rem;
+}
+
+
+
+header button:hover svg path{
+  fill:#065E7C
+}
+
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+td.user a {
+  text-decoration: none;
+}
+
+td.user a span {
+  color: #E1E1E6;
+}
+
+td.user a p {
+  color: #E1E1E6;
+  font-weight: 700;
+}
+
+.repositories {
+  color: #E1E1E6;
+}
+
+.followers {
+  color: #E1E1E6;
+}
+
+td .remove {
+  background: none;
+  border: none;
+
+  color: red;
+
+  cursor: pointer;
+}
+
+
+table td {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+td.user img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+.zeroFavorites {
+  padding: 0;
+  height: 30rem;
+}
+
+.estilo {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #4E5455;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 2.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+
+  background: #181c1c;
+}
+.estilo svg {
+  width: 13.2rem;
+  height: 12.5rem;
+}
