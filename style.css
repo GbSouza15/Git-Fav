@@ -95,12 +95,37 @@ header {
 }
 
 .tableone {
-  border-radius: 1.2rem;
-  max-height: 50rem;
-  overflow: auto;
   border: 1px solid #4A808C;
+  border-radius: 1.2rem;
 }
 
+tbody::-webkit-scrollbar {
+  width: 0.6rem;   
+}
+
+tbody::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 14px 14px transparent;
+  border: solid 4px transparent
+}
+
+tbody::-webkit-scrollbar-thumb {
+  background: #4A808C;
+  border-radius: 1.2rem;  
+}
+
+
+tbody {
+  display: block;
+  max-height: 26rem;
+  overflow-y: overlay;
+  overflow-x: hidden;
+}
+
+.tableone tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
 table {
   width: 100%;
   border-collapse: collapse;
@@ -110,7 +135,6 @@ table {
 
 table * {
   font-size: 1.4rem;
-  
 }
 
 table th {
@@ -138,7 +162,6 @@ table th:first-child {
 table th:last-child {
   border-top-right-radius: 1.2rem;
 }
-
 
 
 header button:hover svg path{
